@@ -1,0 +1,10 @@
+.\objects\inv_mpu.o: Hardware\eMPL\inv_mpu.c
+.\objects\inv_mpu.o: D:\work\MDK524\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\inv_mpu.o: D:\work\MDK524\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\inv_mpu.o: D:\work\MDK524\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\inv_mpu.o: D:\work\MDK524\ARM\ARMCC\Bin\..\include\string.h
+.\objects\inv_mpu.o: D:\work\MDK524\ARM\ARMCC\Bin\..\include\math.h
+.\objects\inv_mpu.o: Hardware\eMPL\inv_mpu.h
+.\objects\inv_mpu.o: .\System\delay.h
+.\objects\inv_mpu.o: .\Hardware\mpu6050.h
+.\objects\inv_mpu.o: .\Hardware\serial.h
