@@ -1,0 +1,2396 @@
+
+;; Function SDIO_DeInit (SDIO_DeInit, funcdef_no=29, decl_uid=5169, cgraph_uid=29, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":42 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 72)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":42 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/v:SI (reg/f:SI 72) [2 MEM[(struct SDIO_TypeDef *)1073840128B].POWER+0 S4 A128])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":42 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":43 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":43 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":43 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":44 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 74)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":44 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 74)
+                (const_int 8 [0x8])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].ARG+0 S4 A64])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":44 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":45 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 75)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":45 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":45 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":46 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/f:SI 76)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":46 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/v:SI (plus:SI (reg/f:SI 76)
+                (const_int 36 [0x24])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DTIMER+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":46 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":47 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":47 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 40 [0x28])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DLEN+0 S4 A64])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":47 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":48 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":48 -1
+     (nil))
+(insn 25 24 26 2 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":48 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":49 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":49 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 81)
+        (const_int 12582912 [0xc00000])) "../Peripheral/src/ch32v30x_sdio.c":49 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 80)
+        (plus:SI (reg:SI 81)
+            (const_int 2047 [0x7ff]))) "../Peripheral/src/ch32v30x_sdio.c":49 -1
+     (expr_list:REG_EQUAL (const_int 12584959 [0xc007ff])
+        (nil)))
+(insn 30 29 31 2 (set (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 56 [0x38])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].ICR+0 S4 A64])
+        (reg:SI 80)) "../Peripheral/src/ch32v30x_sdio.c":49 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":50 -1
+     (nil))
+(insn 32 31 33 2 (set (reg/f:SI 82)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":50 -1
+     (nil))
+(insn 33 32 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 82)
+                (const_int 60 [0x3c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].MASK+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":50 -1
+     (nil))
+
+;; Function SDIO_Init (SDIO_Init, funcdef_no=30, decl_uid=5171, cgraph_uid=30, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 87 [ SDIO_InitStruct ])
+        (reg:SI 10 a0 [ SDIO_InitStruct ])) "../Peripheral/src/ch32v30x_sdio.c":65 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":66 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI tmpreg (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":66 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":68 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 88)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":68 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/v:SI 79 [ tmpreg ])
+        (mem/v:SI (plus:SI (reg/f:SI 88)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":68 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI tmpreg (reg/v:SI 79 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":68 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":69 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI tmpreg (and:SI (reg/v:SI 79 [ tmpreg ])
+        (const_int -32512 [0xffffffffffff8100]))) "../Peripheral/src/ch32v30x_sdio.c":69 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":70 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 90)
+        (mem:SI (plus:SI (reg/v/f:SI 87 [ SDIO_InitStruct ])
+                (const_int 8 [0x8])) [2 SDIO_InitStruct_16(D)->SDIO_ClockPowerSave+0 S4 A32])) -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 91)
+        (mem:SI (plus:SI (reg/v/f:SI 87 [ SDIO_InitStruct ])
+                (const_int 4 [0x4])) [2 SDIO_InitStruct_16(D)->SDIO_ClockBypass+0 S4 A32])) -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 89)
+        (ior:SI (reg:SI 90)
+            (reg:SI 91))) -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 94)
+        (const_int -32768 [0xffffffffffff8000])) "../Peripheral/src/ch32v30x_sdio.c":69 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 93)
+        (plus:SI (reg:SI 94)
+            (const_int 256 [0x100]))) "../Peripheral/src/ch32v30x_sdio.c":69 -1
+     (expr_list:REG_EQUAL (const_int -32512 [0xffffffffffff8100])
+        (nil)))
+(insn 20 19 21 2 (set (reg:SI 92 [ tmpreg ])
+        (and:SI (reg/v:SI 79 [ tmpreg ])
+            (reg:SI 93))) "../Peripheral/src/ch32v30x_sdio.c":69 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 95)
+        (ior:SI (reg:SI 89)
+            (reg:SI 92 [ tmpreg ]))) -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 97)
+        (mem:SI (plus:SI (reg/v/f:SI 87 [ SDIO_InitStruct ])
+                (const_int 12 [0xc])) [2 SDIO_InitStruct_16(D)->SDIO_BusWide+0 S4 A32])) -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 96)
+        (ior:SI (reg:SI 95)
+            (reg:SI 97))) -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 99)
+        (mem:SI (reg/v/f:SI 87 [ SDIO_InitStruct ]) [2 SDIO_InitStruct_16(D)->SDIO_ClockEdge+0 S4 A32])) -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 98)
+        (ior:SI (reg:SI 96)
+            (reg:SI 99))) -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 100)
+        (mem:SI (plus:SI (reg/v/f:SI 87 [ SDIO_InitStruct ])
+                (const_int 16 [0x10])) [2 SDIO_InitStruct_16(D)->SDIO_HardwareFlowControl+0 S4 A32])) -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 86 [ _23 ])
+        (ior:SI (reg:SI 98)
+            (reg:SI 100))) -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 101)
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 87 [ SDIO_InitStruct ])
+                    (const_int 20 [0x14])) [0 SDIO_InitStruct_16(D)->SDIO_ClockDiv+0 S1 A32]))) "../Peripheral/src/ch32v30x_sdio.c":70 -1
+     (nil))
+(insn 29 28 30 2 (set (reg/v:SI 81 [ tmpreg ])
+        (ior:SI (reg:SI 101)
+            (reg:SI 86 [ _23 ]))) "../Peripheral/src/ch32v30x_sdio.c":70 -1
+     (nil))
+(debug_insn 30 29 31 2 (var_location:SI tmpreg (reg/v:SI 81 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":70 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":74 -1
+     (nil))
+(insn 32 31 33 2 (set (reg/f:SI 102)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":74 -1
+     (nil))
+(insn 33 32 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 102)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])
+        (reg/v:SI 81 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":74 -1
+     (nil))
+
+;; Function SDIO_StructInit (SDIO_StructInit, funcdef_no=31, decl_uid=5173, cgraph_uid=31, symbol_order=31)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 72 [ SDIO_InitStruct ])
+        (reg:SI 10 a0 [ SDIO_InitStruct ])) "../Peripheral/src/ch32v30x_sdio.c":88 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":89 -1
+     (nil))
+(insn 7 6 8 2 (set (mem:QI (plus:SI (reg/v/f:SI 72 [ SDIO_InitStruct ])
+                (const_int 20 [0x14])) [0 SDIO_InitStruct_2(D)->SDIO_ClockDiv+0 S1 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":89 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":90 -1
+     (nil))
+(insn 9 8 10 2 (set (mem:SI (reg/v/f:SI 72 [ SDIO_InitStruct ]) [2 SDIO_InitStruct_2(D)->SDIO_ClockEdge+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":90 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":91 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_InitStruct ])
+                (const_int 4 [0x4])) [2 SDIO_InitStruct_2(D)->SDIO_ClockBypass+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":91 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":92 -1
+     (nil))
+(insn 13 12 14 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_InitStruct ])
+                (const_int 8 [0x8])) [2 SDIO_InitStruct_2(D)->SDIO_ClockPowerSave+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":92 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":93 -1
+     (nil))
+(insn 15 14 16 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_InitStruct ])
+                (const_int 12 [0xc])) [2 SDIO_InitStruct_2(D)->SDIO_BusWide+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":93 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":94 -1
+     (nil))
+(insn 17 16 0 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_InitStruct ])
+                (const_int 16 [0x10])) [2 SDIO_InitStruct_2(D)->SDIO_HardwareFlowControl+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":94 -1
+     (nil))
+
+;; Function SDIO_ClockCmd (SDIO_ClockCmd, funcdef_no=32, decl_uid=5175, cgraph_uid=32, symbol_order=32)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 15 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":108 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":109 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":109 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 17)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":110 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":110 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":110 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 256 [0x100]))) "../Peripheral/src/ch32v30x_sdio.c":110 -1
+     (nil))
+(insn 13 12 14 4 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":110 -1
+     (nil))
+(insn 14 13 15 4 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":110 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (label_ref:SI 27)) 250 {jump}
+     (nil)
+ -> 27)
+(barrier 16 15 17)
+(code_label 17 16 18 5 5 (nil) [1 uses])
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":112 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":112 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":112 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (const_int -257 [0xfffffffffffffeff]))) "../Peripheral/src/ch32v30x_sdio.c":112 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":112 -1
+     (nil))
+(insn 24 23 27 5 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 4 [0x4])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":112 -1
+     (nil))
+(code_label 27 24 28 7 4 (nil) [1 uses])
+(note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_SetPowerState (SDIO_SetPowerState, funcdef_no=33, decl_uid=5177, cgraph_uid=33, symbol_order=33)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ SDIO_PowerState ])
+        (reg:SI 10 a0 [ SDIO_PowerState ])) "../Peripheral/src/ch32v30x_sdio.c":127 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":128 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":128 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (reg/f:SI 77) [2 MEM[(struct SDIO_TypeDef *)1073840128B].POWER+0 S4 A128])) "../Peripheral/src/ch32v30x_sdio.c":128 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 73 [ _2 ])
+        (and:SI (reg:SI 72 [ _1 ])
+            (const_int -4 [0xfffffffffffffffc]))) "../Peripheral/src/ch32v30x_sdio.c":128 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":128 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/v:SI (reg/f:SI 78) [2 MEM[(struct SDIO_TypeDef *)1073840128B].POWER+0 S4 A128])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":128 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":129 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":129 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (reg/f:SI 79) [2 MEM[(struct SDIO_TypeDef *)1073840128B].POWER+0 S4 A128])) "../Peripheral/src/ch32v30x_sdio.c":129 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 75 [ _4 ])
+        (ior:SI (reg:SI 74 [ _3 ])
+            (reg/v:SI 76 [ SDIO_PowerState ]))) "../Peripheral/src/ch32v30x_sdio.c":129 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":129 -1
+     (nil))
+(insn 17 16 0 2 (set (mem/v:SI (reg/f:SI 80) [2 MEM[(struct SDIO_TypeDef *)1073840128B].POWER+0 S4 A128])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":129 -1
+     (nil))
+
+;; Function SDIO_GetPowerState (SDIO_GetPowerState, funcdef_no=34, decl_uid=5179, cgraph_uid=34, symbol_order=34)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 10.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":146 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 74)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":146 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (reg/f:SI 74) [2 MEM[(struct SDIO_TypeDef *)1073840128B].POWER+0 S4 A128])) "../Peripheral/src/ch32v30x_sdio.c":146 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 75)
+        (and:SI (reg:SI 72 [ _1 ])
+            (const_int 3 [0x3]))) "../Peripheral/src/ch32v30x_sdio.c":146 -1
+     (nil))
+(insn 9 8 13 2 (set (reg:SI 73 [ <retval> ])
+        (reg:SI 75)) "../Peripheral/src/ch32v30x_sdio.c":146 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 10 a0)
+        (reg:SI 73 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":147 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":147 -1
+     (nil))
+
+;; Function SDIO_ITConfig (SDIO_ITConfig, funcdef_no=35, decl_uid=5182, cgraph_uid=35, symbol_order=35)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 77 [ SDIO_IT ])
+        (reg:SI 10 a0 [ SDIO_IT ])) "../Peripheral/src/ch32v30x_sdio.c":184 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 78 [ NewState ])
+        (reg:SI 11 a1 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":184 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":185 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 78 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":185 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 18)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 10 9 11 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":187 -1
+     (nil))
+(insn 11 10 12 4 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":187 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 60 [0x3c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].MASK+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":187 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg/v:SI 77 [ SDIO_IT ]))) "../Peripheral/src/ch32v30x_sdio.c":187 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":187 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 60 [0x3c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].MASK+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":187 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (label_ref:SI 29)) 250 {jump}
+     (nil)
+ -> 29)
+(barrier 17 16 18)
+(code_label 18 17 19 5 11 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 81)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 81)
+                (const_int 60 [0x3c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].MASK+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 82)
+        (not:SI (reg/v:SI 77 [ SDIO_IT ]))) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 76 [ _5 ])
+        (and:SI (reg:SI 82)
+            (reg:SI 74 [ _3 ]))) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(insn 25 24 26 5 (set (reg/f:SI 83)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(insn 26 25 29 5 (set (mem/v:SI (plus:SI (reg/f:SI 83)
+                (const_int 60 [0x3c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].MASK+0 S4 A32])
+        (reg:SI 76 [ _5 ])) "../Peripheral/src/ch32v30x_sdio.c":191 -1
+     (nil))
+(code_label 29 26 30 7 10 (nil) [1 uses])
+(note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_DMACmd (SDIO_DMACmd, funcdef_no=36, decl_uid=5184, cgraph_uid=36, symbol_order=36)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 15 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":205 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":206 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":206 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 17)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":207 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":207 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":207 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 8 [0x8]))) "../Peripheral/src/ch32v30x_sdio.c":207 -1
+     (nil))
+(insn 13 12 14 4 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":207 -1
+     (nil))
+(insn 14 13 15 4 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":207 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (label_ref:SI 27)) 250 {jump}
+     (nil)
+ -> 27)
+(barrier 16 15 17)
+(code_label 17 16 18 5 14 (nil) [1 uses])
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":209 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":209 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":209 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (const_int -9 [0xfffffffffffffff7]))) "../Peripheral/src/ch32v30x_sdio.c":209 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":209 -1
+     (nil))
+(insn 24 23 27 5 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":209 -1
+     (nil))
+(code_label 27 24 28 7 13 (nil) [1 uses])
+(note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_SendCommand (SDIO_SendCommand, funcdef_no=37, decl_uid=5186, cgraph_uid=37, symbol_order=37)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 83 [ SDIO_CmdInitStruct ])
+        (reg:SI 10 a0 [ SDIO_CmdInitStruct ])) "../Peripheral/src/ch32v30x_sdio.c":224 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":225 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI tmpreg (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":225 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":227 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 72 [ _1 ])
+        (mem:SI (reg/v/f:SI 83 [ SDIO_CmdInitStruct ]) [2 SDIO_CmdInitStruct_10(D)->SDIO_Argument+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":227 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 84)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":227 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/v:SI (plus:SI (reg/f:SI 84)
+                (const_int 8 [0x8])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].ARG+0 S4 A64])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v30x_sdio.c":227 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":229 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 85)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":229 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/v:SI 78 [ tmpreg ])
+        (mem/v:SI (plus:SI (reg/f:SI 85)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":229 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI tmpreg (reg/v:SI 78 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":229 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":230 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI tmpreg (and:SI (reg/v:SI 78 [ tmpreg ])
+        (const_int -2048 [0xfffffffffffff800]))) "../Peripheral/src/ch32v30x_sdio.c":230 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 87)
+        (mem:SI (plus:SI (reg/v/f:SI 83 [ SDIO_CmdInitStruct ])
+                (const_int 4 [0x4])) [2 SDIO_CmdInitStruct_10(D)->SDIO_CmdIndex+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 88)
+        (mem:SI (plus:SI (reg/v/f:SI 83 [ SDIO_CmdInitStruct ])
+                (const_int 8 [0x8])) [2 SDIO_CmdInitStruct_10(D)->SDIO_Response+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 86)
+        (ior:SI (reg:SI 87)
+            (reg:SI 88))) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 89 [ tmpreg ])
+        (and:SI (reg/v:SI 78 [ tmpreg ])
+            (const_int -2048 [0xfffffffffffff800]))) "../Peripheral/src/ch32v30x_sdio.c":230 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 90)
+        (ior:SI (reg:SI 86)
+            (reg:SI 89 [ tmpreg ]))) -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 91)
+        (mem:SI (plus:SI (reg/v/f:SI 83 [ SDIO_CmdInitStruct ])
+                (const_int 12 [0xc])) [2 SDIO_CmdInitStruct_10(D)->SDIO_Wait+0 S4 A32])) -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 82 [ _17 ])
+        (ior:SI (reg:SI 90)
+            (reg:SI 91))) -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 92)
+        (mem:SI (plus:SI (reg/v/f:SI 83 [ SDIO_CmdInitStruct ])
+                (const_int 16 [0x10])) [2 SDIO_CmdInitStruct_10(D)->SDIO_CPSM+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/v:SI 80 [ tmpreg ])
+        (ior:SI (reg:SI 82 [ _17 ])
+            (reg:SI 92))) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI tmpreg (reg/v:SI 80 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":231 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":233 -1
+     (nil))
+(insn 30 29 31 2 (set (reg/f:SI 93)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":233 -1
+     (nil))
+(insn 31 30 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 93)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg/v:SI 80 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":233 -1
+     (nil))
+
+;; Function SDIO_CmdStructInit (SDIO_CmdStructInit, funcdef_no=38, decl_uid=5188, cgraph_uid=38, symbol_order=38)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 72 [ SDIO_CmdInitStruct ])
+        (reg:SI 10 a0 [ SDIO_CmdInitStruct ])) "../Peripheral/src/ch32v30x_sdio.c":247 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":248 -1
+     (nil))
+(insn 7 6 8 2 (set (mem:SI (reg/v/f:SI 72 [ SDIO_CmdInitStruct ]) [2 SDIO_CmdInitStruct_2(D)->SDIO_Argument+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":248 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":249 -1
+     (nil))
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_CmdInitStruct ])
+                (const_int 4 [0x4])) [2 SDIO_CmdInitStruct_2(D)->SDIO_CmdIndex+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":249 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":250 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_CmdInitStruct ])
+                (const_int 8 [0x8])) [2 SDIO_CmdInitStruct_2(D)->SDIO_Response+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":250 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":251 -1
+     (nil))
+(insn 13 12 14 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_CmdInitStruct ])
+                (const_int 12 [0xc])) [2 SDIO_CmdInitStruct_2(D)->SDIO_Wait+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":251 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":252 -1
+     (nil))
+(insn 15 14 0 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_CmdInitStruct ])
+                (const_int 16 [0x10])) [2 SDIO_CmdInitStruct_2(D)->SDIO_CPSM+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":252 -1
+     (nil))
+
+;; Function SDIO_GetCommandResponse (SDIO_GetCommandResponse, funcdef_no=39, decl_uid=5190, cgraph_uid=39, symbol_order=39)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 11.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":264 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 74)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":264 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 74)
+                (const_int 16 [0x10])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].RESPCMD+0 S4 A128])) "../Peripheral/src/ch32v30x_sdio.c":264 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:QI 75)
+        (subreg:QI (reg:SI 72 [ _1 ]) 0)) "../Peripheral/src/ch32v30x_sdio.c":264 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 76)
+        (zero_extend:SI (reg:QI 75))) "../Peripheral/src/ch32v30x_sdio.c":264 -1
+     (nil))
+(insn 10 9 14 2 (set (reg:SI 73 [ <retval> ])
+        (reg:SI 76)) "../Peripheral/src/ch32v30x_sdio.c":264 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 10 a0)
+        (reg:SI 73 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":265 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":265 -1
+     (nil))
+
+;; Function SDIO_GetResponse (SDIO_GetResponse, funcdef_no=40, decl_uid=5192, cgraph_uid=40, symbol_order=40)
+
+Partition 0: size 4 align 4
+	tmp
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 17.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ SDIO_RESP ])
+        (reg:SI 10 a0 [ SDIO_RESP ])) "../Peripheral/src/ch32v30x_sdio.c":281 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":282 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":282 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":284 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":284 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 77)
+        (plus:SI (reg:SI 78)
+            (const_int 20 [0x14]))) "../Peripheral/src/ch32v30x_sdio.c":284 -1
+     (expr_list:REG_EQUAL (const_int 1073840148 [0x40018014])
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 72 [ _1 ])
+        (plus:SI (reg/v:SI 76 [ SDIO_RESP ])
+            (reg:SI 77))) "../Peripheral/src/ch32v30x_sdio.c":284 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v30x_sdio.c":284 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":286 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 73 [ tmp.0_2 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":286 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 74 [ tmp.1_3 ])
+        (reg:SI 73 [ tmp.0_2 ])) "../Peripheral/src/ch32v30x_sdio.c":286 -1
+     (nil))
+(insn 16 15 20 2 (set (reg:SI 75 [ <retval> ])
+        (mem/v:SI (reg/f:SI 74 [ tmp.1_3 ]) [2 *tmp.1_3+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":286 -1
+     (nil))
+(insn 20 16 21 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":287 -1
+     (nil))
+(insn 21 20 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":287 -1
+     (nil))
+
+;; Function SDIO_DataConfig (SDIO_DataConfig, funcdef_no=41, decl_uid=5194, cgraph_uid=41, symbol_order=41)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 84 [ SDIO_DataInitStruct ])
+        (reg:SI 10 a0 [ SDIO_DataInitStruct ])) "../Peripheral/src/ch32v30x_sdio.c":300 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":301 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI tmpreg (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":301 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":303 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 72 [ _1 ])
+        (mem:SI (reg/v/f:SI 84 [ SDIO_DataInitStruct ]) [2 SDIO_DataInitStruct_11(D)->SDIO_DataTimeOut+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":303 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 85)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":303 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/v:SI (plus:SI (reg/f:SI 85)
+                (const_int 36 [0x24])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DTIMER+0 S4 A32])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v30x_sdio.c":303 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":304 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 73 [ _2 ])
+        (mem:SI (plus:SI (reg/v/f:SI 84 [ SDIO_DataInitStruct ])
+                (const_int 4 [0x4])) [2 SDIO_DataInitStruct_11(D)->SDIO_DataLength+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":304 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 86)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":304 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/v:SI (plus:SI (reg/f:SI 86)
+                (const_int 40 [0x28])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DLEN+0 S4 A64])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":304 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":305 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 87)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":305 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/v:SI 79 [ tmpreg ])
+        (mem/v:SI (plus:SI (reg/f:SI 87)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":305 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI tmpreg (reg/v:SI 79 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":305 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":306 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI tmpreg (and:SI (reg/v:SI 79 [ tmpreg ])
+        (const_int -248 [0xffffffffffffff08]))) "../Peripheral/src/ch32v30x_sdio.c":306 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 89)
+        (mem:SI (plus:SI (reg/v/f:SI 84 [ SDIO_DataInitStruct ])
+                (const_int 8 [0x8])) [2 SDIO_DataInitStruct_11(D)->SDIO_DataBlockSize+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 90)
+        (mem:SI (plus:SI (reg/v/f:SI 84 [ SDIO_DataInitStruct ])
+                (const_int 12 [0xc])) [2 SDIO_DataInitStruct_11(D)->SDIO_TransferDir+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 88)
+        (ior:SI (reg:SI 89)
+            (reg:SI 90))) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 91 [ tmpreg ])
+        (and:SI (reg/v:SI 79 [ tmpreg ])
+            (const_int -248 [0xffffffffffffff08]))) "../Peripheral/src/ch32v30x_sdio.c":306 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 92)
+        (ior:SI (reg:SI 88)
+            (reg:SI 91 [ tmpreg ]))) -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 93)
+        (mem:SI (plus:SI (reg/v/f:SI 84 [ SDIO_DataInitStruct ])
+                (const_int 16 [0x10])) [2 SDIO_DataInitStruct_11(D)->SDIO_TransferMode+0 S4 A32])) -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 83 [ _19 ])
+        (ior:SI (reg:SI 92)
+            (reg:SI 93))) -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 94)
+        (mem:SI (plus:SI (reg/v/f:SI 84 [ SDIO_DataInitStruct ])
+                (const_int 20 [0x14])) [2 SDIO_DataInitStruct_11(D)->SDIO_DPSM+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(insn 31 30 32 2 (set (reg/v:SI 81 [ tmpreg ])
+        (ior:SI (reg:SI 83 [ _19 ])
+            (reg:SI 94))) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(debug_insn 32 31 33 2 (var_location:SI tmpreg (reg/v:SI 81 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":307 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":309 -1
+     (nil))
+(insn 34 33 35 2 (set (reg/f:SI 95)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":309 -1
+     (nil))
+(insn 35 34 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 95)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg/v:SI 81 [ tmpreg ])) "../Peripheral/src/ch32v30x_sdio.c":309 -1
+     (nil))
+
+;; Function SDIO_DataStructInit (SDIO_DataStructInit, funcdef_no=42, decl_uid=5196, cgraph_uid=42, symbol_order=42)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 72 [ SDIO_DataInitStruct ])
+        (reg:SI 10 a0 [ SDIO_DataInitStruct ])) "../Peripheral/src/ch32v30x_sdio.c":323 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":324 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 73)
+        (const_int -1 [0xffffffffffffffff])) "../Peripheral/src/ch32v30x_sdio.c":324 -1
+     (nil))
+(insn 8 7 9 2 (set (mem:SI (reg/v/f:SI 72 [ SDIO_DataInitStruct ]) [2 SDIO_DataInitStruct_2(D)->SDIO_DataTimeOut+0 S4 A32])
+        (reg:SI 73)) "../Peripheral/src/ch32v30x_sdio.c":324 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":325 -1
+     (nil))
+(insn 10 9 11 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_DataInitStruct ])
+                (const_int 4 [0x4])) [2 SDIO_DataInitStruct_2(D)->SDIO_DataLength+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":325 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":326 -1
+     (nil))
+(insn 12 11 13 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_DataInitStruct ])
+                (const_int 8 [0x8])) [2 SDIO_DataInitStruct_2(D)->SDIO_DataBlockSize+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":326 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":327 -1
+     (nil))
+(insn 14 13 15 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_DataInitStruct ])
+                (const_int 12 [0xc])) [2 SDIO_DataInitStruct_2(D)->SDIO_TransferDir+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":327 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":328 -1
+     (nil))
+(insn 16 15 17 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_DataInitStruct ])
+                (const_int 16 [0x10])) [2 SDIO_DataInitStruct_2(D)->SDIO_TransferMode+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":328 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":329 -1
+     (nil))
+(insn 18 17 0 2 (set (mem:SI (plus:SI (reg/v/f:SI 72 [ SDIO_DataInitStruct ])
+                (const_int 20 [0x14])) [2 SDIO_DataInitStruct_2(D)->SDIO_DPSM+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":329 -1
+     (nil))
+
+;; Function SDIO_GetDataCounter (SDIO_GetDataCounter, funcdef_no=43, decl_uid=5198, cgraph_uid=43, symbol_order=43)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 8.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":341 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":341 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 72 [ <retval> ])
+        (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 48 [0x30])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCOUNT+0 S4 A128])) "../Peripheral/src/ch32v30x_sdio.c":341 -1
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 10 a0)
+        (reg:SI 72 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":342 -1
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":342 -1
+     (nil))
+
+;; Function SDIO_ReadData (SDIO_ReadData, funcdef_no=44, decl_uid=5200, cgraph_uid=44, symbol_order=44)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 8.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":353 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":353 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 72 [ <retval> ])
+        (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 128 [0x80])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].FIFO+0 S4 A128])) "../Peripheral/src/ch32v30x_sdio.c":353 -1
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 10 a0)
+        (reg:SI 72 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":354 -1
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":354 -1
+     (nil))
+
+;; Function SDIO_WriteData (SDIO_WriteData, funcdef_no=45, decl_uid=5202, cgraph_uid=45, symbol_order=45)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 72 [ Data ])
+        (reg:SI 10 a0 [ Data ])) "../Peripheral/src/ch32v30x_sdio.c":366 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":367 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":367 -1
+     (nil))
+(insn 8 7 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 128 [0x80])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].FIFO+0 S4 A128])
+        (reg/v:SI 72 [ Data ])) "../Peripheral/src/ch32v30x_sdio.c":367 -1
+     (nil))
+
+;; Function SDIO_GetFIFOCount (SDIO_GetFIFOCount, funcdef_no=46, decl_uid=5204, cgraph_uid=46, symbol_order=46)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 8.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":379 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":379 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 72 [ <retval> ])
+        (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 72 [0x48])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].FIFOCNT+0 S4 A64])) "../Peripheral/src/ch32v30x_sdio.c":379 -1
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 10 a0)
+        (reg:SI 72 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":380 -1
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":380 -1
+     (nil))
+
+;; Function SDIO_StartSDIOReadWait (SDIO_StartSDIOReadWait, funcdef_no=47, decl_uid=5206, cgraph_uid=47, symbol_order=47)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 15 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":392 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":393 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":393 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 17)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":394 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":394 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":394 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 256 [0x100]))) "../Peripheral/src/ch32v30x_sdio.c":394 -1
+     (nil))
+(insn 13 12 14 4 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":394 -1
+     (nil))
+(insn 14 13 15 4 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":394 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (label_ref:SI 27)) 250 {jump}
+     (nil)
+ -> 27)
+(barrier 16 15 17)
+(code_label 17 16 18 5 29 (nil) [1 uses])
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":396 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":396 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":396 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (const_int -257 [0xfffffffffffffeff]))) "../Peripheral/src/ch32v30x_sdio.c":396 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":396 -1
+     (nil))
+(insn 24 23 27 5 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":396 -1
+     (nil))
+(code_label 27 24 28 7 28 (nil) [1 uses])
+(note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_StopSDIOReadWait (SDIO_StopSDIOReadWait, funcdef_no=48, decl_uid=5208, cgraph_uid=48, symbol_order=48)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 15 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":409 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":410 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":410 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 17)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":411 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":411 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":411 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 512 [0x200]))) "../Peripheral/src/ch32v30x_sdio.c":411 -1
+     (nil))
+(insn 13 12 14 4 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":411 -1
+     (nil))
+(insn 14 13 15 4 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":411 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (label_ref:SI 27)) 250 {jump}
+     (nil)
+ -> 27)
+(barrier 16 15 17)
+(code_label 17 16 18 5 33 (nil) [1 uses])
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":413 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":413 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":413 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (const_int -513 [0xfffffffffffffdff]))) "../Peripheral/src/ch32v30x_sdio.c":413 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":413 -1
+     (nil))
+(insn 24 23 27 5 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":413 -1
+     (nil))
+(code_label 27 24 28 7 32 (nil) [1 uses])
+(note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_SetSDIOReadWaitMode (SDIO_SetSDIOReadWaitMode, funcdef_no=49, decl_uid=5210, cgraph_uid=49, symbol_order=49)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 15 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ SDIO_ReadWaitMode ])
+        (reg:SI 10 a0 [ SDIO_ReadWaitMode ])) "../Peripheral/src/ch32v30x_sdio.c":428 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":429 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ SDIO_ReadWaitMode ])
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":429 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 17)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":430 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":430 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":430 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 1024 [0x400]))) "../Peripheral/src/ch32v30x_sdio.c":430 -1
+     (nil))
+(insn 13 12 14 4 (set (reg/f:SI 78)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":430 -1
+     (nil))
+(insn 14 13 15 4 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":430 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (label_ref:SI 27)) 250 {jump}
+     (nil)
+ -> 27)
+(barrier 16 15 17)
+(code_label 17 16 18 5 37 (nil) [1 uses])
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":432 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":432 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":432 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (const_int -1025 [0xfffffffffffffbff]))) "../Peripheral/src/ch32v30x_sdio.c":432 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":432 -1
+     (nil))
+(insn 24 23 27 5 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":432 -1
+     (nil))
+(code_label 27 24 28 7 36 (nil) [1 uses])
+(note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_SetSDIOOperation (SDIO_SetSDIOOperation, funcdef_no=50, decl_uid=5212, cgraph_uid=50, symbol_order=50)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 17 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":445 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":446 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 19)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":446 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 19)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 79)
+        (const_int 4096 [0x1000])) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 78)
+        (plus:SI (reg:SI 79)
+            (const_int -2048 [0xfffffffffffff800]))) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (expr_list:REG_EQUAL (const_int 2048 [0x800])
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg:SI 78))) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(insn 15 14 16 4 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(insn 16 15 17 4 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":447 -1
+     (nil))
+(jump_insn 17 16 18 4 (set (pc)
+        (label_ref:SI 31)) 250 {jump}
+     (nil)
+ -> 31)
+(barrier 18 17 19)
+(code_label 19 18 20 5 41 (nil) [1 uses])
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(insn 22 21 23 5 (set (reg/f:SI 81)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 81)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 83)
+        (const_int -4096 [0xfffffffffffff000])) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 82)
+        (plus:SI (reg:SI 83)
+            (const_int 2047 [0x7ff]))) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (expr_list:REG_EQUAL (const_int -2049 [0xfffffffffffff7ff])
+        (nil)))
+(insn 26 25 27 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 82))) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(insn 27 26 28 5 (set (reg/f:SI 84)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(insn 28 27 31 5 (set (mem/v:SI (plus:SI (reg/f:SI 84)
+                (const_int 44 [0x2c])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":449 -1
+     (nil))
+(code_label 31 28 32 7 40 (nil) [1 uses])
+(note 32 31 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_SendSDIOSuspendCmd (SDIO_SendSDIOSuspendCmd, funcdef_no=51, decl_uid=5214, cgraph_uid=51, symbol_order=51)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 17 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":462 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":463 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 19)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":463 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 19)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 79)
+        (const_int 4096 [0x1000])) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 78)
+        (plus:SI (reg:SI 79)
+            (const_int -2048 [0xfffffffffffff800]))) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (expr_list:REG_EQUAL (const_int 2048 [0x800])
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg:SI 78))) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(insn 15 14 16 4 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(insn 16 15 17 4 (set (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":464 -1
+     (nil))
+(jump_insn 17 16 18 4 (set (pc)
+        (label_ref:SI 31)) 250 {jump}
+     (nil)
+ -> 31)
+(barrier 18 17 19)
+(code_label 19 18 20 5 45 (nil) [1 uses])
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(insn 22 21 23 5 (set (reg/f:SI 81)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 81)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 83)
+        (const_int -4096 [0xfffffffffffff000])) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 82)
+        (plus:SI (reg:SI 83)
+            (const_int 2047 [0x7ff]))) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (expr_list:REG_EQUAL (const_int -2049 [0xfffffffffffff7ff])
+        (nil)))
+(insn 26 25 27 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 82))) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(insn 27 26 28 5 (set (reg/f:SI 84)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(insn 28 27 31 5 (set (mem/v:SI (plus:SI (reg/f:SI 84)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":466 -1
+     (nil))
+(code_label 31 28 32 7 44 (nil) [1 uses])
+(note 32 31 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_CommandCompletionCmd (SDIO_CommandCompletionCmd, funcdef_no=52, decl_uid=5216, cgraph_uid=52, symbol_order=52)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":479 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":480 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":480 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 18)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 78)
+        (const_int 4096 [0x1000])) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg:SI 78))) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":481 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (label_ref:SI 30)) 250 {jump}
+     (nil)
+ -> 30)
+(barrier 17 16 18)
+(code_label 18 17 19 5 49 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 82)
+        (const_int -4096 [0xfffffffffffff000])) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 81)
+        (plus:SI (reg:SI 82)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (expr_list:REG_EQUAL (const_int -4097 [0xffffffffffffefff])
+        (nil)))
+(insn 25 24 26 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 81))) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(insn 26 25 27 5 (set (reg/f:SI 83)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(insn 27 26 30 5 (set (mem/v:SI (plus:SI (reg/f:SI 83)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":483 -1
+     (nil))
+(code_label 30 27 31 7 48 (nil) [1 uses])
+(note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_CEATAITCmd (SDIO_CEATAITCmd, funcdef_no=53, decl_uid=5218, cgraph_uid=53, symbol_order=53)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":496 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":497 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":497 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 18)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 78)
+        (const_int 8192 [0x2000])) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg:SI 78))) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":498 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (label_ref:SI 30)) 250 {jump}
+     (nil)
+ -> 30)
+(barrier 17 16 18)
+(code_label 18 17 19 5 52 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 82)
+        (const_int -8192 [0xffffffffffffe000])) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 81)
+        (plus:SI (reg:SI 82)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (expr_list:REG_EQUAL (const_int -8193 [0xffffffffffffdfff])
+        (nil)))
+(insn 25 24 26 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 81))) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(insn 26 25 27 5 (set (reg/f:SI 83)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(insn 27 26 30 5 (set (mem/v:SI (plus:SI (reg/f:SI 83)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":500 -1
+     (nil))
+(code_label 30 27 31 7 51 (nil) [1 uses])
+(note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_SendCEATACmd (SDIO_SendCEATACmd, funcdef_no=54, decl_uid=5220, cgraph_uid=54, symbol_order=54)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ NewState ])
+        (reg:SI 10 a0 [ NewState ])) "../Peripheral/src/ch32v30x_sdio.c":513 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":514 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 76 [ NewState ])
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "../Peripheral/src/ch32v30x_sdio.c":514 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 18)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(insn 10 9 11 4 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 78)
+        (const_int 16384 [0x4000])) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg:SI 78))) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 79)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v30x_sdio.c":515 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (label_ref:SI 30)) 250 {jump}
+     (nil)
+ -> 30)
+(barrier 17 16 18)
+(code_label 18 17 19 5 55 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 80)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 82)
+        (const_int -16384 [0xffffffffffffc000])) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 81)
+        (plus:SI (reg:SI 82)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (expr_list:REG_EQUAL (const_int -16385 [0xffffffffffffbfff])
+        (nil)))
+(insn 25 24 26 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 81))) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(insn 26 25 27 5 (set (reg/f:SI 83)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(insn 27 26 30 5 (set (mem/v:SI (plus:SI (reg/f:SI 83)
+                (const_int 12 [0xc])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].CMD+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v30x_sdio.c":517 -1
+     (nil))
+(code_label 30 27 31 7 54 (nil) [1 uses])
+(note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SDIO_GetFlagStatus (SDIO_GetFlagStatus, funcdef_no=55, decl_uid=5222, cgraph_uid=55, symbol_order=55)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 16.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ SDIO_FLAG ])
+        (reg:SI 10 a0 [ SDIO_FLAG ])) "../Peripheral/src/ch32v30x_sdio.c":556 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":557 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI bitstatus (const_int 0 [0])) "../Peripheral/src/ch32v30x_sdio.c":557 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":559 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 77)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":559 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 52 [0x34])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].STA+0 S4 A32])) "../Peripheral/src/ch32v30x_sdio.c":559 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI bitstatus (zero_extend:SI (ne:QI (and:SI (reg:SI 72 [ _1 ])
+                (reg/v:SI 76 [ SDIO_FLAG ]))
+            (const_int 0 [0])))) -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":567 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 79)
+        (and:SI (reg:SI 72 [ _1 ])
+            (reg/v:SI 76 [ SDIO_FLAG ]))) "../Peripheral/src/ch32v30x_sdio.c":559 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 81)
+        (ne:SI (reg:SI 79)
+            (const_int 0 [0]))) "../Peripheral/src/ch32v30x_sdio.c":559 -1
+     (nil))
+(insn 15 14 19 2 (set (reg:SI 75 [ <retval> ])
+        (reg:SI 81)) "../Peripheral/src/ch32v30x_sdio.c":567 -1
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":568 -1
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":568 -1
+     (nil))
+
+;; Function SDIO_ClearFlag (SDIO_ClearFlag, funcdef_no=56, decl_uid=5224, cgraph_uid=56, symbol_order=56)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 72 [ SDIO_FLAG ])
+        (reg:SI 10 a0 [ SDIO_FLAG ])) "../Peripheral/src/ch32v30x_sdio.c":594 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":595 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":595 -1
+     (nil))
+(insn 8 7 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 56 [0x38])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].ICR+0 S4 A64])
+        (reg/v:SI 72 [ SDIO_FLAG ])) "../Peripheral/src/ch32v30x_sdio.c":595 -1
+     (nil))
+
+;; Function SDIO_GetITStatus (SDIO_GetITStatus, funcdef_no=62, decl_uid=5226, cgraph_uid=57, symbol_order=57)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 73 [ SDIO_IT ])
+        (reg:SI 10 a0 [ SDIO_IT ])) "../Peripheral/src/ch32v30x_sdio.c":632 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 10 a0)
+        (reg/v:SI 73 [ SDIO_IT ])) -1
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("SDIO_GetFlagStatus") [flags 0x3] <function_decl 066978e8 SDIO_GetFlagStatus>) [0 SDIO_GetFlagStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("SDIO_GetFlagStatus") [flags 0x3] <function_decl 066978e8 SDIO_GetFlagStatus>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 8 7 12 2 (set (reg:SI 72 [ <retval> ])
+        (reg:SI 10 a0)) -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 10 a0)
+        (reg:SI 72 [ <retval> ])) "../Peripheral/src/ch32v30x_sdio.c":632 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v30x_sdio.c":632 -1
+     (nil))
+
+;; Function SDIO_ClearITPendingBit (SDIO_ClearITPendingBit, funcdef_no=60, decl_uid=5228, cgraph_uid=58, symbol_order=58)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 72 [ SDIO_IT ])
+        (reg:SI 10 a0 [ SDIO_IT ])) "../Peripheral/src/ch32v30x_sdio.c":669 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:SI SDIO_FLAG (reg/v:SI 72 [ SDIO_IT ])) -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Peripheral/src/ch32v30x_sdio.c":595 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 73)
+        (const_int 1073840128 [0x40018000])) "../Peripheral/src/ch32v30x_sdio.c":595 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/v:SI (plus:SI (reg/f:SI 73)
+                (const_int 56 [0x38])) [2 MEM[(struct SDIO_TypeDef *)1073840128B].ICR+0 S4 A64])
+        (reg/v:SI 72 [ SDIO_IT ])) "../Peripheral/src/ch32v30x_sdio.c":595 -1
+     (nil))
+(debug_insn 10 9 0 2 (var_location:SI SDIO_FLAG (clobber (const_int 0 [0]))) -1
+     (nil))

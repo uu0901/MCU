@@ -1,0 +1,647 @@
+
+;; Function DVP_INTCfg (DVP_INTCfg, funcdef_no=29, decl_uid=5247, cgraph_uid=29, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 19 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 80 [ s ])
+        (reg:SI 10 a0 [ s ])) "../Peripheral/src/ch32v30x_dvp.c":32 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 81 [ i ])
+        (reg:SI 11 a1 [ i ])) "../Peripheral/src/ch32v30x_dvp.c":32 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":33 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 80 [ s ])
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) "../Peripheral/src/ch32v30x_dvp.c":33 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 21)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 10 9 11 4 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 11 10 13 4 (set (reg/f:SI 82)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 13 11 14 4 (set (reg:QI 84)
+        (mem/v:QI (plus:SI (reg/f:SI 82)
+                (const_int 2 [0x2])) [0 MEM[(struct DVP_TypeDef *)1342504960B].IER+0 S1 A16])) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (reg:QI 84))) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 85)
+        (ior:SI (reg:SI 72 [ _1 ])
+            (reg/v:SI 81 [ i ]))) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 85) 0))) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 17 16 18 4 (set (reg/f:SI 86)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(insn 18 17 19 4 (set (mem/v:QI (plus:SI (reg/f:SI 86)
+                (const_int 2 [0x2])) [0 MEM[(struct DVP_TypeDef *)1342504960B].IER+0 S1 A16])
+        (subreg/s/v:QI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":35 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref:SI 38)) 250 {jump}
+     (nil)
+ -> 38)
+(barrier 20 19 21)
+(code_label 21 20 22 5 2 (nil) [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 23 22 24 5 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 24 23 26 5 (set (reg/f:SI 87)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 26 24 27 5 (set (reg:QI 89)
+        (mem/v:QI (plus:SI (reg/f:SI 87)
+                (const_int 2 [0x2])) [0 MEM[(struct DVP_TypeDef *)1342504960B].IER+0 S1 A16])) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:SI 74 [ _3 ])
+        (zero_extend:SI (reg:QI 89))) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:QI 90)
+        (subreg/v:QI (reg/v:SI 81 [ i ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 91)
+        (not:SI (subreg:SI (reg:QI 90) 0))) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:QI 92)
+        (subreg:QI (reg:SI 91) 0)) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:QI 93)
+        (subreg/v:QI (reg:SI 74 [ _3 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 94)
+        (and:SI (subreg:SI (reg:QI 92) 0)
+            (subreg:SI (reg:QI 93) 0))) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 79 [ _8 ])
+        (zero_extend:SI (subreg:QI (reg:SI 94) 0))) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 34 33 35 5 (set (reg/f:SI 95)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(insn 35 34 38 5 (set (mem/v:QI (plus:SI (reg/f:SI 95)
+                (const_int 2 [0x2])) [0 MEM[(struct DVP_TypeDef *)1342504960B].IER+0 S1 A16])
+        (subreg/s/v:QI (reg:SI 79 [ _8 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":39 -1
+     (nil))
+(code_label 38 35 39 7 1 (nil) [1 uses])
+(note 39 38 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function DVP_Mode (DVP_Mode, funcdef_no=30, decl_uid=5250, cgraph_uid=30, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 51 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 82 [ s ])
+        (reg:SI 10 a0 [ s ])) "../Peripheral/src/ch32v30x_dvp.c":59 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 83 [ i ])
+        (reg:SI 11 a1 [ i ])) "../Peripheral/src/ch32v30x_dvp.c":59 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 84)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:QI 85)
+        (mem/v:QI (reg/f:SI 84) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (reg:QI 85))) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 86)
+        (and:SI (reg:SI 72 [ _1 ])
+            (const_int -49 [0xffffffffffffffcf]))) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 86) 0))) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 87)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/v:QI (reg/f:SI 87) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])
+        (subreg/s/v:QI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":60 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":62 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 82 [ s ])
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "../Peripheral/src/ch32v30x_dvp.c":62 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 28)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 19 18 20 4 (set (reg/f:SI 88)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:QI 89)
+        (mem/v:QI (reg/f:SI 88) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 74 [ _3 ])
+        (zero_extend:SI (reg:QI 89))) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 90)
+        (ior:SI (reg:SI 74 [ _3 ])
+            (reg/v:SI 82 [ s ]))) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 75 [ _4 ])
+        (zero_extend:SI (subreg:QI (reg:SI 90) 0))) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 24 23 25 4 (set (reg/f:SI 91)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(insn 25 24 26 4 (set (mem/v:QI (reg/f:SI 91) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])
+        (subreg/s/v:QI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":64 -1
+     (nil))
+(jump_insn 26 25 27 4 (set (pc)
+        (label_ref 38)) -1
+     (nil)
+ -> 38)
+(barrier 27 26 28)
+(code_label 28 27 29 5 6 (nil) [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 31 5 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 31 30 32 5 (set (reg/f:SI 92)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:QI 93)
+        (mem/v:QI (reg/f:SI 92) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 76 [ _5 ])
+        (zero_extend:SI (reg:QI 93))) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:SI 94)
+        (and:SI (reg:SI 76 [ _5 ])
+            (const_int -49 [0xffffffffffffffcf]))) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:SI 77 [ _6 ])
+        (zero_extend:SI (subreg:QI (reg:SI 94) 0))) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 36 35 37 5 (set (reg/f:SI 95)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(insn 37 36 38 5 (set (mem/v:QI (reg/f:SI 95) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])
+        (subreg/s/v:QI (reg:SI 77 [ _6 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":68 -1
+     (nil))
+(code_label 38 37 39 6 7 (nil) [1 uses])
+(note 39 38 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 6 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":71 -1
+     (nil))
+(jump_insn 41 40 42 6 (set (pc)
+        (if_then_else (eq (reg/v:SI 83 [ i ])
+                (const_int 0 [0]))
+            (label_ref 53)
+            (pc))) "../Peripheral/src/ch32v30x_dvp.c":71 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 53)
+(note 42 41 43 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 7 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 44 43 45 7 (set (reg/f:SI 96)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 45 44 46 7 (set (reg:QI 97)
+        (mem/v:QI (reg/f:SI 96) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 46 45 47 7 (set (reg:SI 78 [ _7 ])
+        (zero_extend:SI (reg:QI 97))) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 47 46 48 7 (set (reg:SI 98)
+        (ior:SI (reg:SI 78 [ _7 ])
+            (const_int 64 [0x40]))) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:SI 79 [ _8 ])
+        (zero_extend:SI (subreg:QI (reg:SI 98) 0))) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 49 48 50 7 (set (reg/f:SI 99)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(insn 50 49 51 7 (set (mem/v:QI (reg/f:SI 99) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])
+        (subreg/s/v:QI (reg:SI 79 [ _8 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":73 -1
+     (nil))
+(jump_insn 51 50 52 7 (set (pc)
+        (label_ref:SI 65)) 250 {jump}
+     (nil)
+ -> 65)
+(barrier 52 51 53)
+(code_label 53 52 54 8 8 (nil) [1 uses])
+(note 54 53 55 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 55 54 56 8 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 56 55 57 8 (set (reg/f:SI 100)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 57 56 58 8 (set (reg:QI 101)
+        (mem/v:QI (reg/f:SI 100) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 58 57 59 8 (set (reg:SI 80 [ _9 ])
+        (zero_extend:SI (reg:QI 101))) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 59 58 60 8 (set (reg:SI 102)
+        (and:SI (reg:SI 80 [ _9 ])
+            (const_int -65 [0xffffffffffffffbf]))) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 60 59 61 8 (set (reg:SI 81 [ _10 ])
+        (zero_extend:SI (subreg:QI (reg:SI 102) 0))) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 61 60 62 8 (set (reg/f:SI 103)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(insn 62 61 65 8 (set (mem/v:QI (reg/f:SI 103) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR0+0 S1 A128])
+        (subreg/s/v:QI (reg:SI 81 [ _10 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":77 -1
+     (nil))
+(code_label 65 62 66 10 5 (nil) [1 uses])
+(note 66 65 0 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+
+;; Function DVP_Cfg (DVP_Cfg, funcdef_no=31, decl_uid=5254, cgraph_uid=31, symbol_order=31)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 12->15 redirected to 16
+Redirecting jump 88 from 15 to 16.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 84 [ s ])
+        (reg:SI 10 a0 [ s ])) "../Peripheral/src/ch32v30x_dvp.c":99 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 85 [ i ])
+        (reg:SI 11 a1 [ i ])) "../Peripheral/src/ch32v30x_dvp.c":99 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 86 [ j ])
+        (reg:SI 12 a2 [ j ])) "../Peripheral/src/ch32v30x_dvp.c":99 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":100 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 84 [ s ])
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) -1
+     (int_list:REG_BR_PROB 357913948 (nil))
+ -> 26)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:SI 87)
+        (const_int 1 [0x1])) -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (ne (reg/v:SI 84 [ s ])
+                (reg:SI 87))
+            (label_ref 38)
+            (pc))) -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 38)
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 5 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 15 14 17 5 (set (reg/f:SI 88)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 17 15 18 5 (set (reg:QI 90)
+        (mem/v:QI (plus:SI (reg/f:SI 88)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (reg:QI 90))) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:SI 91)
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 1 [0x1]))) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (subreg:QI (reg:SI 91) 0))) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 92)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(insn 22 21 23 5 (set (mem/v:QI (plus:SI (reg/f:SI 92)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":103 -1
+     (nil))
+(debug_insn 23 22 24 5 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":104 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (label_ref 38)) "../Peripheral/src/ch32v30x_dvp.c":104 -1
+     (nil)
+ -> 38)
+(barrier 25 24 26)
+(code_label 26 25 27 6 12 (nil) [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 28 27 29 6 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 29 28 31 6 (set (reg/f:SI 93)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 31 29 32 6 (set (reg:QI 95)
+        (mem/v:QI (plus:SI (reg/f:SI 93)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:SI 74 [ _3 ])
+        (zero_extend:SI (reg:QI 95))) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:SI 96)
+        (and:SI (reg:SI 74 [ _3 ])
+            (const_int -2 [0xfffffffffffffffe]))) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:SI 75 [ _4 ])
+        (zero_extend:SI (subreg:QI (reg:SI 96) 0))) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 35 34 36 6 (set (reg/f:SI 97)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(insn 36 35 37 6 (set (mem/v:QI (plus:SI (reg/f:SI 97)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":106 -1
+     (nil))
+(debug_insn 37 36 38 6 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":107 -1
+     (nil))
+(code_label 38 37 39 7 13 (nil) [2 uses])
+(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 7 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":112 -1
+     (nil))
+(jump_insn 41 40 42 7 (set (pc)
+        (if_then_else (eq (reg/v:SI 85 [ i ])
+                (const_int 0 [0]))
+            (label_ref 58)
+            (pc))) -1
+     (int_list:REG_BR_PROB 357913948 (nil))
+ -> 58)
+(note 42 41 43 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 8 (set (reg:SI 98)
+        (const_int 1 [0x1])) -1
+     (nil))
+(jump_insn 44 43 45 8 (set (pc)
+        (if_then_else (ne (reg/v:SI 85 [ i ])
+                (reg:SI 98))
+            (label_ref 70)
+            (pc))) -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 70)
+(note 45 44 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 47 9 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 47 46 49 9 (set (reg/f:SI 99)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 49 47 50 9 (set (reg:QI 101)
+        (mem/v:QI (plus:SI (reg/f:SI 99)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 50 49 51 9 (set (reg:SI 76 [ _5 ])
+        (zero_extend:SI (reg:QI 101))) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:SI 102)
+        (ior:SI (reg:SI 76 [ _5 ])
+            (const_int 2 [0x2]))) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 52 51 53 9 (set (reg:SI 77 [ _6 ])
+        (zero_extend:SI (subreg:QI (reg:SI 102) 0))) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 53 52 54 9 (set (reg/f:SI 103)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(insn 54 53 55 9 (set (mem/v:QI (plus:SI (reg/f:SI 103)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 77 [ _6 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":115 -1
+     (nil))
+(debug_insn 55 54 56 9 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":116 -1
+     (nil))
+(jump_insn 56 55 57 9 (set (pc)
+        (label_ref 70)) "../Peripheral/src/ch32v30x_dvp.c":116 -1
+     (nil)
+ -> 70)
+(barrier 57 56 58)
+(code_label 58 57 59 10 14 (nil) [1 uses])
+(note 59 58 60 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 60 59 61 10 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 61 60 63 10 (set (reg/f:SI 104)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 63 61 64 10 (set (reg:QI 106)
+        (mem/v:QI (plus:SI (reg/f:SI 104)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 64 63 65 10 (set (reg:SI 78 [ _7 ])
+        (zero_extend:SI (reg:QI 106))) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 65 64 66 10 (set (reg:SI 107)
+        (and:SI (reg:SI 78 [ _7 ])
+            (const_int -3 [0xfffffffffffffffd]))) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 66 65 67 10 (set (reg:SI 79 [ _8 ])
+        (zero_extend:SI (subreg:QI (reg:SI 107) 0))) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 67 66 68 10 (set (reg/f:SI 108)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(insn 68 67 69 10 (set (mem/v:QI (plus:SI (reg/f:SI 108)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 79 [ _8 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":118 -1
+     (nil))
+(debug_insn 69 68 70 10 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":119 -1
+     (nil))
+(code_label 70 69 71 11 15 (nil) [2 uses])
+(note 71 70 72 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 72 71 73 11 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":124 -1
+     (nil))
+(jump_insn 73 72 74 11 (set (pc)
+        (if_then_else (eq (reg/v:SI 86 [ j ])
+                (const_int 0 [0]))
+            (label_ref 90)
+            (pc))) -1
+     (int_list:REG_BR_PROB 357913948 (nil))
+ -> 90)
+(note 74 73 75 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 12 (set (reg:SI 109)
+        (const_int 1 [0x1])) -1
+     (nil))
+(jump_insn 76 75 77 12 (set (pc)
+        (if_then_else (ne (reg/v:SI 86 [ j ])
+                (reg:SI 109))
+            (label_ref:SI 104)
+            (pc))) 180 {*branchsi}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 104)
+(note 77 76 78 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 78 77 79 13 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 79 78 81 13 (set (reg/f:SI 110)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 81 79 82 13 (set (reg:QI 112)
+        (mem/v:QI (plus:SI (reg/f:SI 110)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 82 81 83 13 (set (reg:SI 80 [ _9 ])
+        (zero_extend:SI (reg:QI 112))) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 83 82 84 13 (set (reg:SI 113)
+        (ior:SI (reg:SI 80 [ _9 ])
+            (const_int 4 [0x4]))) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 84 83 85 13 (set (reg:SI 81 [ _10 ])
+        (zero_extend:SI (subreg:QI (reg:SI 113) 0))) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 85 84 86 13 (set (reg/f:SI 114)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(insn 86 85 87 13 (set (mem/v:QI (plus:SI (reg/f:SI 114)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 81 [ _10 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":127 -1
+     (nil))
+(debug_insn 87 86 88 13 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":128 -1
+     (nil))
+(jump_insn 88 87 89 13 (set (pc)
+        (label_ref:SI 104)) "../Peripheral/src/ch32v30x_dvp.c":128 250 {jump}
+     (nil)
+ -> 104)
+(barrier 89 88 90)
+(code_label 90 89 91 14 16 (nil) [1 uses])
+(note 91 90 92 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 92 91 93 14 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 93 92 95 14 (set (reg/f:SI 115)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 95 93 96 14 (set (reg:QI 117)
+        (mem/v:QI (plus:SI (reg/f:SI 115)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 96 95 97 14 (set (reg:SI 82 [ _11 ])
+        (zero_extend:SI (reg:QI 117))) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 97 96 98 14 (set (reg:SI 118)
+        (and:SI (reg:SI 82 [ _11 ])
+            (const_int -5 [0xfffffffffffffffb]))) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 98 97 99 14 (set (reg:SI 83 [ _12 ])
+        (zero_extend:SI (subreg:QI (reg:SI 118) 0))) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 99 98 100 14 (set (reg/f:SI 119)
+        (const_int 1342504960 [0x50050000])) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(insn 100 99 101 14 (set (mem/v:QI (plus:SI (reg/f:SI 119)
+                (const_int 1 [0x1])) [0 MEM[(struct DVP_TypeDef *)1342504960B].CR1+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 83 [ _12 ]) 0)) "../Peripheral/src/ch32v30x_dvp.c":130 -1
+     (nil))
+(debug_insn 101 100 104 14 (debug_marker) "../Peripheral/src/ch32v30x_dvp.c":131 -1
+     (nil))
+(code_label 104 101 105 16 11 (nil) [2 uses])
+(note 105 104 0 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
