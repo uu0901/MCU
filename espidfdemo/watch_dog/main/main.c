@@ -1,0 +1,128 @@
+/*
+ * SPDX-FileCopyrightText: 2010-2022 Espressif Systems (Shanghai) CO LTD
+ *
+ * SPDX-License-Identifier: CC0-1.0
+ */
+
+#include <stdio.h>
+#include <inttypes.h>
+#include "sdkconfig.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "nvs_flash.h"
+#include "esp_err.h"
+#include "led.h"
+#include "ws2812b.h"
+#include "key.h"
+#include "wdt.h"
+void ws2812bTask(void* param);
+void keyTask(void* param);
+void wdtTask(void* param);
+/**
+* @brief 程序入口
+* @param 无
+* @retval 无
+*/
+void app_main(void)
+{
+
+    esp_err_t ret = nvs_flash_init(); /* 初始化 NVS */
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
+    {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
+    }
+    led_init();
+    key_init();
+    if (configure_led() == NULL) 
+    {
+        printf("configure_led failed, aborting ws2812 demo\n");
+        while (1) 
+        { 
+            vTaskDelay(pdMS_TO_TICKS(1000)); 
+        }
+    }
+    BaseType_t rc;
+    rc = xTaskCreatePinnedToCore(ws2812bTask,"ws2812bTask",4096,NULL,3,NULL,1);
+    if (rc != pdPASS)
+    {
+        printf("Failed to create ws2812bTask\n");
+        while (1) 
+        { 
+            vTaskDelay(pdMS_TO_TICKS(1000)); 
+        }
+    }
+
+    rc = xTaskCreatePinnedToCore(keyTask,"keyTask",4096,NULL,3,NULL,1);
+    if (rc != pdPASS) 
+    {
+        printf("Failed to create keyTask\n");
+        while (1)
+        {
+            vTaskDelay(pdMS_TO_TICKS(1000)); 
+        }
+    }
+    wdt_init(1000000); /* 初始化定时器 */
+    rc = xTaskCreatePinnedToCore(wdtTask,"wdtTask",4096,NULL,3,NULL,1);
+    if (rc != pdPASS) 
+    {
+        printf("Failed to create wdtTask\n");
+        while (1)
+        {
+            vTaskDelay(pdMS_TO_TICKS(1000)); 
+        }
+    }
+
+}
+    
+void ws2812bTask(void* param)
+{
+    while(1)
+    {
+        ws2812b_rainbow(led_strip);
+        vTaskDelay(pdMS_TO_TICKS(30));
+
+    }
+}
+void keyTask(void* param)
+{
+    // uint8_t key;
+    while(1)
+    {
+        // key = key_scan(0); /* 获取键值 */
+        // switch (key)
+        // {
+        //     case BOOT_PRES: /* BOOT 被按下 */
+        //     {
+        //         LED_TOGGLE(); /* LED 状态翻转 */
+        //         break;
+        //     }
+        //     default:
+        //     {
+        //         break;
+        //     }
+        // }
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+}
+void wdtTask(void* param)
+{
+    uint8_t key;
+    while(1)
+    {
+        key = key_scan(0); /* 获取键值 */
+        switch (key)
+        {
+            case BOOT_PRES: /* BOOT 被按下 */
+            {
+                restart_timer(1000000); /* 喂狗 */
+                break;
+            }
+            default:
+            {
+                break;
+            }
+        }
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+}

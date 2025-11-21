@@ -1,0 +1,22 @@
+#①源文件路径，指本目录下的所有代码驱动
+set(src_dirs
+    LED
+    WS2812B
+    MQTT)
+#②头文件路径，指本目录下的所有代码驱动
+set(include_dirs
+    LED
+    WS2812B
+    MQTT)
+#③设置依赖库
+set(requires
+    driver
+    led_strip
+    mqtt
+    esp_netif
+    esp_wifi
+    esp_event
+    log)
+idf_component_register(SRC_DIRS ${src_dirs}
+INCLUDE_DIRS ${include_dirs} REQUIRES ${requires})
+# component_compile_options(-ffast-math -O3 -Wno-error=format=-Wno-format)
